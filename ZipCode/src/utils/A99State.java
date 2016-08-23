@@ -13,7 +13,7 @@ private static State me = new A99State();
 		Pattern pattern = Pattern.compile("[BEGLMNSW][0-9][0-9]\\s...");
 		Matcher matcher = pattern.matcher(pCode);
 		if(!matcher.matches()) return SuffixErrorState.getInctance().handle(pCode);
-		else return  "the first letter is expected to be {B, E, G, L, M, N, S, W} for the A9 9AA format";
+		else return  "the first letter is expected to be {B- E- G- L- M- N- S- W} for the A9 9AA format";
 	}
 	
 	public static State getInctance() {
